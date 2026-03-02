@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Circular Menu</title>
+    <style>
+        /* Background Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e8e9ed, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            height: 100vh;
+        }
+
+        /* Central Circular Menu */
+        .circle-menu {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in-out;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hover Effect */
+        .circle-menu:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        /* Menu Items Container */
+        .menu-items {
+            position: fixed;
+            top: 60%;
+            left: 60%;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            list-style: none;
+            padding: 0;
+            transform: scale(0);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .menu-items.active {
+            transform: scale(1);
+        }
+
+        /* Menu Items */
+        .menu-items li {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: rgba(49, 110, 119, 0.2);
+            backdrop-filter: blur(10px);
+            color: rgb(222, 35, 35);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            font-size: 24px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Glowing Hover Effect */
+        .menu-items li:hover {
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            transform: scale(1.2);
+        }
+
+        /* Positioning Menu Items in a Circle */
+        .menu-items li:nth-child(1) { transform: rotate(0deg) translate(120px) rotate(0deg); }
+        .menu-items li:nth-child(2) { transform: rotate(72deg) translate(120px) rotate(-72deg); }
+        .menu-items li:nth-child(3) { transform: rotate(144deg) translate(120px) rotate(-144deg); }
+        .menu-items li:nth-child(4) { transform: rotate(216deg) translate(120px) rotate(-216deg); }
+        .menu-items li:nth-child(5) { transform: rotate(288deg) translate(120px) rotate(-288deg); }
+
+        /* Bounce Animation on Open */
+        .menu-items.active li {
+            animation: bounceIn 0.5s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Circular Menu Button -->
+    <div class="circle-menu" onclick="toggleMenu()">☰</div>
+
+    <!-- Beautiful Round Menu Items -->
+    <ul class="menu-items">
+        <li><a href="index.html">🏠</a></li>
+        <li><a href="about.html">ℹ</a></li>
+        <li><a href="services.html">🛠</a></li>
+        <li><a href="portfolio.html">📁</a></li>
+        <li><a href="contact.html">📞</a></li>
+    </ul>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu-items").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

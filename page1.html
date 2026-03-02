@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(221, 130, 18);
+            background-color: rgba(0, 3, 6, 0.062);
+            align-items: center;
+            justify-content: center;
+            
+        }
+        /* Navigation bar container */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Navigation links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #10c3eb;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: #10b8de;
+            padding: 14px 20px;
+            background-color: inherit;
+            margin: 0;
+        }
+        /* Dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e1c6dd;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(183, 47, 102, 0.2);
+            z-index: 1;
+        }
+        /* Dropdown links */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Change color on hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #a7b399;
+            color: black;
+        }
+        /* Responsive adjustments */
+        @media screen and (max-width: 600px) {
+            .navbar a, .dropdown .dropbtn {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            }
+            .img{
+            image-orientation: flip;
+            align-items: center;
+            justify-content: center;
+           }
+           pre{
+            text-align: center;
+            font-size: 30px;
+            font-style: oblique;
+            color: rgb(0, 6, 6);
+            
+            
+           }
+           p{
+            align-items: center;
+           }
+           b{
+            font-size: 31px;
+            
+           }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\Student-Akshaya.html">Home</a>
+     <div class="dropdown">
+        <button class="dropbtn">Courses 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\after10th.html">After 10th</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\after12th.html">After 12th</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\after-graduation.html">After Graduation</a>
+            </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Study-Materials
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\m10th.html"> 10th</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\M12TH.html">12th</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\degree-m.html">degree</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\engneering-m.html">Engineering</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\medical=m.html">Medical</a>
+             </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Question-Papers
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\qp10.html"> 10th</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\qp12.html">12th</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\qpdegree.html">degree</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\qp engnireen.html">Engineering</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\qp medi.html">Medical</a>
+             </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Results
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\r10.html"> CLICK HERE FOR RESULTS</a>
+            
+             </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Scholorships
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\sc1.html">CLICK HERE FOR DIFFERENT SCHOLARSHIPS</a>
+            
+             </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Competitive-Exams
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\ce.html">CLICK HERE FOR LINKS</a>
+            
+             </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Suggestions
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\s course.html">Courses</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\s college.html">College's</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\s study.html">Study-Tips</a>
+            <a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\s others.html">Others</a>
+             </div>
+    </div> 
+</div>
+<pre>
+
+<img src="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\rag.jpg" width="280" height="280">
+
+</pre>
+<pre>
+<b>
+    "Welcome to <u>STUDENT-AKSHAYA</u> We're thrilled to have you here.
+     Whether you're looking for Services and Information, you've come to the right place.
+      Explore, discover, and let us help you find exactly what you need.
+       If you have any questions, we're just a click away. Enjoy your visit!"
+    
+</b>
+</pre>
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Tips for Scoring Good Marks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e8f5e9, #ffffff);
+      color: #333;
+    }
+    header {
+      background-color: #43a047;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .accordion {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      padding: 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      margin: 10px 0;
+      border-left: 6px solid #43a047;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .accordion:hover, .active {
+      background-color: #c8e6c9;
+    }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: #ffffff;
+      overflow: hidden;
+      border-left: 3px solid #81c784;
+      border-radius: 0 0 5px 5px;
+    }
+    .panel ul {
+      padding: 10px 0;
+    }
+    .note {
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-left: 5px solid #43a047;
+      margin-top: 30px;
+      border-radius: 5px;
+      font-style: italic;
+    }
+    footer {
+      text-align: center;
+      background-color: #2e7d32;
+      color: white;
+      padding: 12px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Study Tips for Scoring Good Marks in All Exams
+</header>
+
+<div class="container">
+
+  <button class="accordion">📚 1. Plan Your Study Time</button>
+  <div class="panel">
+    <ul>
+      <li>Create a daily/weekly timetable.</li>
+      <li>Divide time between subjects and revisions.</li>
+      <li>Use the 50-10 rule: 50 mins study, 10 mins break.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">📝 2. Make Notes & Mind Maps</button>
+  <div class="panel">
+    <ul>
+      <li>Summarize topics in your own words.</li>
+      <li>Use mind maps, charts, and bullet points.</li>
+      <li>Highlight key terms and formulas.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">📖 3. Understand Concepts Clearly</button>
+  <div class="panel">
+    <ul>
+      <li>Focus on understanding, not memorizing.</li>
+      <li>Watch videos or ask teachers for clarity.</li>
+      <li>Use real-life examples to relate topics.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">🔁 4. Revise Regularly</button>
+  <div class="panel">
+    <ul>
+      <li>Revise weekly to strengthen memory.</li>
+      <li>Use flashcards and formula sheets.</li>
+      <li>Take quick quizzes or self-tests.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">🧠 5. Practice Previous Papers</button>
+  <div class="panel">
+    <ul>
+      <li>Solve model papers and past question papers.</li>
+      <li>Understand the exam pattern and time management.</li>
+      <li>Identify frequently asked questions.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">⏱ 6. Time Management During Exam</button>
+  <div class="panel">
+    <ul>
+      <li>Read question paper carefully before starting.</li>
+      <li>Attempt easy questions first, then tough ones.</li>
+      <li>Keep last 10–15 mins for revision.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">💤 7. Take Care of Health & Sleep</button>
+  <div class="panel">
+    <ul>
+      <li>Sleep at least 7–8 hours daily for brain power.</li>
+      <li>Eat healthy and avoid junk food before exams.</li>
+      <li>Do light exercise or yoga to reduce stress.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">👨‍🏫 8. Clear Doubts Early</button>
+  <div class="panel">
+    <ul>
+      <li>Don't wait till last moment to ask questions.</li>
+      <li>Use group studies or talk to teachers/friends.</li>
+      <li>Use online videos for tough topics.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">📅 9. Use Calendar/Apps for Reminders</button>
+  <div class="panel">
+    <ul>
+      <li>Use planners or mobile apps to stay on track.</li>
+      <li>Set reminders for topics and revision days.</li>
+      <li>Track your progress with checklists.</li>
+    </ul>
+  </div>
+
+  <button class="accordion">💡 10. Stay Positive & Confident</button>
+  <div class="panel">
+    <ul>
+      <li>Avoid fear and overthinking before exams.</li>
+      <li>Use positive affirmations and believe in yourself.</li>
+      <li>Practice mock tests to boost confidence.</li>
+    </ul>
+  </div>
+
+  <div class="note">
+    ✅ <strong>Final Suggestion:</strong><br>
+    Consistency + Smart Study + Good Health = Great Marks. Start early, stay regular, and don’t give up!
+  </div>
+
+</div>
+
+<footer>
+  📘 All the Best! Study Smart, Score High, and Stay Confident!
+</footer>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>
+
+

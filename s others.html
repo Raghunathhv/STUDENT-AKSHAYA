@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Productive Options Other Than Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fff8e1, #ffffff);
+      color: #333;
+    }
+    header {
+      background-color: #ff9800;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .accordion {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      padding: 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      margin: 10px 0;
+      border-left: 6px solid #ff9800;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .accordion:hover, .active {
+      background-color: #ffe0b2;
+    }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: #ffffff;
+      overflow: hidden;
+      border-left: 3px solid #ffcc80;
+      border-radius: 0 0 5px 5px;
+    }
+    .panel ul {
+      padding: 10px 0;
+    }
+    .note {
+      background-color: #fff8e1;
+      padding: 15px;
+      border-left: 5px solid #ff9800;
+      margin-top: 30px;
+      border-radius: 5px;
+      font-style: italic;
+    }
+    footer {
+      text-align: center;
+      background-color: #ef6c00;
+      color: white;
+      padding: 12px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Productive Options Other Than Study
+</header>
+
+<div class="container">
+
+  <button class="accordion">🎨 1. Learn Creative Skills</button>
+  <div class="panel">
+    <ul>
+      <li>Drawing, Painting, Calligraphy</li>
+      <li>Music (Instruments or Vocal)</li>
+      <li>Graphic Design or Animation</li>
+    </ul>
+  </div>
+
+  <button class="accordion">💻 2. Learn Coding or Tech Skills</button>
+  <div class="panel">
+    <ul>
+      <li>Basic HTML, CSS, Python, JavaScript</li>
+      <li>App/Game Development</li>
+      <li>Learn Excel, Canva, or Photoshop</li>
+    </ul>
+  </div>
+
+  <button class="accordion">📷 3. Start a Creative Hobby</button>
+  <div class="panel">
+    <ul>
+      <li>Photography or Videography</li>
+      <li>Start a Blog or YouTube Channel</li>
+      <li>DIY Crafts or Model Making</li>
+    </ul>
+  </div>
+
+  <button class="accordion">📚 4. Read Books Beyond Syllabus</button>
+  <div class="panel">
+    <ul>
+      <li>Motivational, Self-Help, or Biographies</li>
+      <li>Fiction, Mystery, or Science Books</li>
+      <li>Newspapers and Current Affairs</li>
+    </ul>
+  </div>
+
+  <button class="accordion">💪 5. Stay Fit & Active</button>
+  <div class="panel">
+    <ul>
+      <li>Yoga, Meditation, or Stretching</li>
+      <li>Walking, Cycling, or Dance</li>
+      <li>Join a sports club or team</li>
+    </ul>
+  </div>
+
+  <button class="accordion">🌐 6. Volunteer or Join Community Work</button>
+  <div class="panel">
+    <ul>
+      <li>Help NGOs or local charities</li>
+      <li>Teach younger students</li>
+      <li>Clean-up drives or awareness campaigns</li>
+    </ul>
+  </div>
+
+  <button class="accordion">🗣 7. Improve Communication Skills</button>
+  <div class="panel">
+    <ul>
+      <li>Practice public speaking</li>
+      <li>Join debates or elocution competitions</li>
+      <li>Start journaling or writing essays</li>
+    </ul>
+  </div>
+
+  <button class="accordion">👨‍💼 8. Learn Life & Career Skills</button>
+  <div class="panel">
+    <ul>
+      <li>Basic money management or budgeting</li>
+      <li>Time management and goal setting</li>
+      <li>Presentation and interview skills</li>
+    </ul>
+  </div>
+
+  <button class="accordion">🌱 9. Try Gardening or Cooking</button>
+  <div class="panel">
+    <ul>
+      <li>Grow your own plants or flowers</li>
+      <li>Learn easy recipes or baking</li>
+      <li>Decorate your own study or room space</li>
+    </ul>
+  </div>
+
+  <div class="note">
+    💡 <strong>Final Suggestion:</strong><br>
+    Use your time wisely! Doing something creative, physical, or practical helps develop your confidence and skills — even outside textbooks!
+  </div>
+
+</div>
+
+<footer>
+  ✨ Grow Beyond Books – Discover Your Hidden Talents!
+</footer>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+

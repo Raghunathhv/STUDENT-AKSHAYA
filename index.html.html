@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT-AKSHAYA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+            background-color: rgb(216, 219, 203);
+
+            margin: 0;
+            
+        }
+        .container {
+            text-align: center;
+            padding: none;
+            background: color #f5f5f5;;
+
+            
+        }
+        h1 {
+            color: #ebe5e5;
+            font-size: 50px;
+            font-style: bold;
+        }
+        
+        a:hover {
+            background-color: #1e8523;
+        }
+        #dynamicText {
+            color: #edf2f4;
+            margin-top: 20px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+            font-size: 25px;
+        }
+        u{color: rgb(227, 212, 227);}
+.slide-in{
+    transform: translateY(-100%);
+    animation: slideInAnimation 1s forwards;
+}
+button{
+    transform: translateX(-100%);
+    animation: slideInAnimation 2s both;
+}
+p{
+    transform: translateX(-100%);
+    animation: slideInAnimation 2s both;
+    font-size: 100px;
+}
+.learn-more {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #bdc4bf;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            
+            transition: background 0.3s ease-in-out;
+        }
+
+@keyframes slideInAnimation{to{transform: translateX(0);}}
+    </style>
+</head>
+<body background="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\12.webp">
+
+
+<div class="container">
+    <h1 class="slide-in">Welcome to  <u>STUDENT-AKSHAYA</u></h1>
+    
+<a href="C:\Users\Raghunath HV\OneDrive\Desktop\Raghunath H.V\page1.html" class="learn-more" onclick="showAlert(event)">login</a>
+<script>
+    function showAlert(event) {
+      event.preventDefault(); // stops immediate navigation
+      alert("Redirecting to login page...");
+      window.location.href = "loginpage.html"; // navigate after alert
+    }
+  </script>
+  
+    <p id="dynamicText">Login To<i> STUDENT-AKSHAYA</i> for Different Services.</p>
+</div>
+</body>
+</html>
+
+
+
